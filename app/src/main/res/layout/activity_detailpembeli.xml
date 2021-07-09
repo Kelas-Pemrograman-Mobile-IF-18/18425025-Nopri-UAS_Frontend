@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000A27"
+    android:orientation="vertical"
+    tools:context=".users.detailpembeli">
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:background="#4C48D1" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignBottom="@+id/view5"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="97dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Detail Barang"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true"
+        android:layout_marginBottom="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:stretchColumns="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardBackgroundColor="@color/bgcolor"
+                app:cardCornerRadius="7dp"
+                android:elevation="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/bgcolor"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="40dp"
+                        android:id="@+id/gambardetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center" />
+                    <EditText
+                        android:id="@+id/codebrg"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Kode Barang"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/bgbar"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+                        android:editable="false"/>
+
+                    <EditText
+                        android:id="@+id/namebrg"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Nama Barang"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/bgbar"
+                        android:paddingLeft="10dp"
+                        android:editable="false"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:editable="false"
+                        android:id="@+id/pricebrg"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Harga Barang"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/bgbar"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"/>
+
+                    <EditText
+                        android:id="@+id/category"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Kategori"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/bgbar"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+                        android:editable="false"/>
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Deskripsi Barang"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/bgbar"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"
+                        android:editable="false"/>
+                    <EditText
+                        android:id="@+id/jumlah"
+                        android:layout_margin="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Masukkan Jumlah"
+                        android:textColorHint="@color/white"
+                        android:background="@drawable/bgbar"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/white"/>
+
+
+                    <Button
+                        android:id="@+id/pesanbarang"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="pesan"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/bgbar2"
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </TableLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
